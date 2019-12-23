@@ -7,7 +7,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../_dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -20,11 +21,10 @@ module.exports = {
       },
     ],
   },
-  mode: 'production',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'My website',
-      template: './templates/client.html',
+      title: 'My Website',
+      template: path.resolve(__dirname, 'template/template.html'),
     }),
   ],
 };
