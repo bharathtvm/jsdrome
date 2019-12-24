@@ -9,4 +9,5 @@ module.exports = merge(common, {
     port: 9000,
   },
   mode: 'development',
+  devtool: 'inline-source-map',
 });
