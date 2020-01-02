@@ -45,6 +45,7 @@
     "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
+    "create-react-app": "^3.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
